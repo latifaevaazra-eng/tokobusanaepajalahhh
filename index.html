@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva's Collection</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+ <style>
+       * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #f7f5ef;
+            color: #304f43;
+        }
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .header {
+            background-color: #fffdf8;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        .logo img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 15px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu ul li {
+            display: inline-block;
+            position: relative;
+        }
+        .menu ul li a {
+            display: block;
+            padding: 12px 18px;
+            text-decoration: none;
+            color: #304f43;
+        }
+        .menu ul li a:hover {
+            color: #a18b62;
+        }
+        ul.submenu {
+            background-color: #fffdf8;
+            border: 1px solid #ddd5c5;
+            text-align: left;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            display: none;
+            z-index: 10;
+        }
+        .menu ul li:hover ul.submenu {
+            display: block;
+        }
+        ul.submenu li {
+            display: block;
+        }
+        ul.submenu li a {
+            padding: 10px 15px;
+        }
+        .jumbotron {
+            width: 100%;
+            padding: 80px 30px;
+            text-align: center;
+            color: white;
+            background-color: #58786b;
+            background-image:
+             linear-gradient(rgba(35, 45, 38, 0.4),
+                            rgba(35, 45, 38, 0.4)),              url("fototoko");
+            background-size: cover;
+            background-position: center;
+            position-repeat: no-repeat;
+        }
+        .jumbotron h2,
+        .jumbotron p {
+            position: relative;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+        .content {
+            background-color: #f2efe7;
+            padding: 35px 20px;
+            overflow: auto;
+        }
+        .content h2 {
+            text-align: center;
+            margin: 0 0 30px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .thumbnail {
+            background-color: white;
+            text-align: center;
+            padding: 12px;
+            width: calc(33.333% - 20px);
+            max-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+        }
+        .thumbnail img {
+            display: block;
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 6px;
+        }
+        .thumbnail h2 {
+            font-size: 18px;
+            margin: 15px 0 8px;
+        }
+        .thumbnail p {
+            margin: 0 0 8px;
+            color: #58786b;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #304f43;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+        }
+        @media (max-width: 700px) {
+            .thumbnail {
+                width: calc(50% - 10px);
+            }
+            .thumbnail img {
+                height: 200px;
+            }
+            .menu ul li a {
+                padding: 10px;
+                font-size: 14px;
+            }
+            .jumbotron {
+                padding: 55px 20px;
+            }
+        }
+        @media (max-width: 400px) {
+            .thumbnail {
+                width: 100%;
+                max-width: 300px;
+            }
+            .thumbnail img {
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+     <img src="logo" alt="Eva's Collection Logo">
+            </div>
+  <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="jumbotron">
+            <h2>Welcome to Eva's Collection</h2>
+            <p>Merangkai keindahan dalam balutan busana santun, anggun, dan menawan.</p>
+        </section>
+        <main class="content">
+            <h2>Our Collection</h2>
+            <div class="product-list">
+<div class="thumbnail">
+    <img src="pashmina" alt="Pashmina">
+                    <h2>Pashmina</h2>
+                    <p>Rp 50.000</p>
+                </div>
+                <div class="thumbnail">
+      <img src="jersey" alt="Kerudung Jersey">
+                    <h2>Jersey</h2>
+                    <p>Rp 100.000</p>
+                </div>
+               <div class="thumbnail">
+          <img src="batik" alt="Busana Batik">
+                    <h2>Batik</h2>
+                    <p>Rp 235.000</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="tunik" alt="Tunik">
+                    <h2>Tunik</h2>
+                    <p>Rp 250.000</p>
+                </div>
+           <div class="thumbnail">
+<img src="white" alt="Busana Putih">
+                    <h2>White Series</h2>
+                    <p>Rp 250.000</p>
+                </div>
+                <div class="thumbnail">
+<img src="hijau" alt="Busana Hijau">
+                    <h2>Green Series</h2>
+                    <p>Rp 250.000</p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+<p>© 2026 Eva's Collection. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
